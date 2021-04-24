@@ -47,6 +47,12 @@ namespace TrainingCoreExample
 
             app.UseRouting();
 
+            app.UseCors(_ =>
+                _.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .SetIsOriginAllowed(origin => true)
+                .AllowAnyHeader());
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
