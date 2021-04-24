@@ -10,6 +10,7 @@ namespace TrainingCoreExample.Database
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
+        public string Address { get; set; }
         public int FirstBookAmount { get; set; }
         public int SecondBookAmount { get; set; }
         public int ThirdBookAmount { get; set; }

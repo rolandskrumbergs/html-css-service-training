@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TrainingCoreExample.Database;
 
 namespace TrainingCoreExample.Migrations
 {
     [DbContext(typeof(ContactRequestDbContext))]
-    partial class ContactRequestDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210424090222_Address")]
+    partial class Address
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
